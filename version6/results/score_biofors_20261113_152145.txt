@@ -1,0 +1,6 @@
+score_biofors   started 2026-11-13T15:21:45+05:30
+settings: {"features": "results\\biofors_features.csv", "model": "results\\final_model.joblib", "fpr": null, "boot": 1000, "seed": 0, "no_masks": false, "out": "results"}
+versions: {"python": "3.13.14", "platform": "Windows-11-10.0.26200-SP0", "cpus": 20, "numpy": "2.5.3", "cv2": "5.0.0", "sklearn": "1.9.1", "scipy": "1.18.1", "joblib": "1.6.0"}
+
+
+score_biofors   finished 2026-11-13T15:21:45+05:30   runtime 0.0 min   status: failed: ModuleNotFoundError: No module named '_loss'

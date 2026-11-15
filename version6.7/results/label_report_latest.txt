@@ -1,0 +1,33 @@
+label_report   started 2026-11-14T17:26:42+05:30
+settings: {"labels": "results\\recod_labels.csv", "prelabels": "results\\recod_prelabels.csv", "validation": "results\\biomedclip_validation.json", "allow_incomplete": false, "authentic_dir": "..\\dataset\\train_images\\authentic", "forged_dir": "..\\dataset\\train_images\\forged", "out": "results"}
+versions: {"python": "3.13.14", "platform": "Windows-11-10.0.26200-SP0", "cpus": 20, "numpy": "2.5.3", "cv2": "5.0.0", "sklearn": "1.9.1", "scipy": "1.18.1", "joblib": "1.6.0"}
+
+figures: 2751   reviewed: 2751
+
+BiomedCLIP on BioFors (known types, held-out check split of 1558 images): balanced accuracy 83.7%, per type Blot/Gel 97%, Microscopy 98%, Macroscopy 40%, FACS 100%
+
+review on Recod.ai: 2648/2751 suggestions accepted (96.3%), 103 corrected
+
+suggested (rows) vs final (columns):
+               Blot/Gel Microscopy  Histology Macroscopy       FACS      Other  accepted
+Blot/Gel            491          3          0          9          0          0       98%
+Microscopy           11       1343         39          0          0          8       96%
+Histology            10          0        375          0          0          0       97%
+Macroscopy            8          8          0        436          0          4       96%
+FACS                  1          0          0          0          0          0        0%
+Other                 0          2          0          0          0          3       60%
+
+final labels (figures; and images in each class of the detection data):
+type          figures  forged imgs  authentic imgs
+Blot/Gel          521          521             411
+Microscopy       1356         1356            1138
+Histology         414          414             373
+Macroscopy        445          445             445
+FACS                0            0               0
+Other              15           15              10
+
+for BioFors comparisons (Histology merged into Microscopy, as BioFors does): Blot/Gel 521, Microscopy 1770, Macroscopy 445, FACS 0, Other 15
+
+Saved results\recod_types.csv  <- version7 uses this file
+
+label_report   finished 2026-11-14T17:27:03+05:30   runtime 0.4 min   status: ok

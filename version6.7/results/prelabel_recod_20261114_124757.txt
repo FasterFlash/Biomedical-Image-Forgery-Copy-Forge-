@@ -1,0 +1,16 @@
+prelabel_recod   started 2026-11-14T12:47:57+05:30
+settings: {"authentic_dir": "..\\dataset\\train_images\\authentic", "forged_dir": "..\\dataset\\train_images\\forged", "validation": "results\\biomedclip_validation.json", "threads": null, "chunk": 256, "out": "results"}
+versions: {"python": "3.13.14", "platform": "Windows-11-10.0.26200-SP0", "cpus": 20, "numpy": "2.5.3", "cv2": "5.0.0", "sklearn": "1.9.1", "scipy": "1.18.1", "joblib": "1.6.0"}
+
+figures: 2751  (authentic version available for 2377, forged-only 374)
+prompt wrapper: all templates averaged   (BioFors check balanced accuracy 84.8%)
+
+suggested types (BEFORE review):
+  Blot/Gel      506   mean confidence 0.97
+  Microscopy   1786   mean confidence 0.97
+  Macroscopy    457   mean confidence 0.97
+  FACS            2   mean confidence 0.71
+  Other           0   mean confidence nan
+Next:  python review_labels.py
+
+prelabel_recod   finished 2026-11-14T12:54:31+05:30   runtime 6.6 min   status: ok

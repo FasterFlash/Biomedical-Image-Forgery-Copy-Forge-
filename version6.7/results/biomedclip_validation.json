@@ -1,0 +1,116 @@
+{
+ "chosen_templates": [
+  1
+ ],
+ "chosen_name": "template 'this is {}'",
+ "tune_scores": [
+  [
+   "template '{}'",
+   0.8454982886899861
+  ],
+  [
+   "template 'this is {}'",
+   0.8623696210090472
+  ],
+  [
+   "template 'a figure panel showing {}'",
+   0.8357707700785293
+  ],
+  [
+   "template 'a biomedical image: {}'",
+   0.8605534809077517
+  ],
+  [
+   "all templates averaged",
+   0.8606037005569716
+  ]
+ ],
+ "check_balanced_accuracy": 0.8370419440391167,
+ "check_accuracy": 0.8273427471116817,
+ "per_class": {
+  "Blot/Gel": 0.9745547073791349,
+  "Microscopy": 0.9750623441396509,
+  "Macroscopy": 0.39855072463768115,
+  "FACS": 1.0
+ },
+ "confusion_rows_true": [
+  "Blot/Gel",
+  "Microscopy",
+  "Macroscopy",
+  "FACS"
+ ],
+ "confusion_cols_pred": [
+  "Blot/Gel",
+  "Microscopy",
+  "Histology",
+  "Macroscopy",
+  "FACS",
+  "Other"
+ ],
+ "confusion": [
+  [
+   383,
+   6,
+   1,
+   1,
+   1,
+   1
+  ],
+  [
+   5,
+   287,
+   104,
+   0,
+   2,
+   3
+  ],
+  [
+   16,
+   67,
+   101,
+   165,
+   19,
+   46
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   350,
+   0
+  ]
+ ],
+ "confidence_coverage": [
+  {
+   "min_confidence": 0.5,
+   "share": 0.9467265725288831,
+   "accuracy": 0.8583050847457627
+  },
+  {
+   "min_confidence": 0.7,
+   "share": 0.8626444159178434,
+   "accuracy": 0.9069940476190477
+  },
+  {
+   "min_confidence": 0.8,
+   "share": 0.8119383825417201,
+   "accuracy": 0.9359683794466404
+  },
+  {
+   "min_confidence": 0.9,
+   "share": 0.7605905006418485,
+   "accuracy": 0.9578059071729957
+  },
+  {
+   "min_confidence": 0.95,
+   "share": 0.7182284980744544,
+   "accuracy": 0.9722966934763181
+  }
+ ],
+ "n_tune": 360,
+ "n_check": 1558,
+ "verdict_use": false,
+ "model": "hf-hub:microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224",
+ "fake_encoder": false
+}

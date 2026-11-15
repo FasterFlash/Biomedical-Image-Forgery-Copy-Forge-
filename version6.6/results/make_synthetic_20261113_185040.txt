@@ -1,0 +1,20 @@
+make_synthetic   started 2026-11-13T18:50:40+05:30
+settings: {"images": "..\\biofors_images", "annotations": "..\\biofors_annotations", "exclude_manifest": "..\\version6\\results\\biofors_calib_manifest.json", "counts": ["Blot/Gel:700", "Microscopy:600", "Macroscopy:150"], "seed": 1, "out": "results"}
+versions: {"python": "3.13.14", "platform": "Windows-11-10.0.26200-SP0", "cpus": 20, "numpy": "2.5.3", "cv2": "5.0.0", "sklearn": "1.9.1", "scipy": "1.18.1", "joblib": "1.6.0"}
+
+excluded (version6 calibration images): 2200
+Blot/Gel: 18105 genuine training images available, want 700
+Microscopy: 9658 genuine training images available, want 600
+Macroscopy: 155 genuine training images available, want 150
+
+pairs made: 1450   by type {'Blot/Gel': 700, 'Microscopy': 600, 'Macroscopy': 150}   skipped {'missing': 0, 'too_small_or_no_room': 204}
+  clean        208
+  rotate       208
+  scale        208
+  flip         207
+  blur         207
+  jpeg         206
+  publication  206
+Next:  python run_synth.py --workers 4
+
+make_synthetic   finished 2026-11-13T18:51:21+05:30   runtime 0.7 min   status: ok

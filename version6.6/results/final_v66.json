@@ -1,0 +1,315 @@
+{
+ "meta": {
+  "created": "2026-11-13T18:59:25+05:30",
+  "versions": {
+   "python": "3.13.14",
+   "platform": "Windows-11-10.0.26200-SP0",
+   "cpus": 20,
+   "numpy": "2.5.3",
+   "cv2": "5.0.0",
+   "sklearn": "1.9.1",
+   "scipy": "1.18.1",
+   "joblib": "1.6.0"
+  },
+  "chosen": "C3",
+  "selection_rule": "highest expected image MCC on synthetic BioFors; simpler within 0.01 wins; order C0 < C2 < C1 < C4 < C3",
+  "prevalence": 0.04316546762589928,
+  "feature_names_all": [
+   "excl_frac",
+   "n_raw",
+   "raw_per_kp",
+   "raw_ratio_mean",
+   "raw_ratio_q25",
+   "n_inl",
+   "inl_per_raw",
+   "inl_ratio_mean",
+   "inl_ratio_q75",
+   "mutual_frac",
+   "uniq_pts_frac",
+   "both_roles_frac",
+   "n_dbscan",
+   "n_cl_tested",
+   "n_cl_passed",
+   "largest_inl",
+   "second_inl",
+   "top_share",
+   "disp_med",
+   "disp_min",
+   "disp_max",
+   "disp_cv",
+   "vec_spread",
+   "vec_spread_lg",
+   "lg_scale_dev",
+   "lg_rot",
+   "lg_src_bbox",
+   "lg_dst_bbox",
+   "lg_sd_dist",
+   "lg_sd_iou",
+   "lg_density",
+   "all_bbox"
+  ],
+  "stable_features": [
+   "n_raw",
+   "raw_per_kp",
+   "raw_ratio_mean",
+   "raw_ratio_q25",
+   "n_inl",
+   "inl_per_raw",
+   "inl_ratio_mean",
+   "inl_ratio_q75",
+   "mutual_frac",
+   "largest_inl",
+   "disp_med",
+   "disp_min",
+   "disp_cv",
+   "vec_spread",
+   "vec_spread_lg",
+   "lg_sd_dist",
+   "lg_sd_iou",
+   "lg_density"
+  ],
+  "candidates": {
+   "C0": {
+    "name": "count (confirmed matches)",
+    "auc": 0.6976490133042695,
+    "auc_publication": 0.5585707160295089,
+    "auc_by_variant": {
+     "clean": 0.9831193506782696,
+     "rotate": 0.8098463870792307,
+     "scale": 0.8138059247522085,
+     "flip": 0.5055337297925236,
+     "blur": 0.5805857594292447,
+     "jpeg": 0.6468970994775547
+    },
+    "best": {
+     "target": 0.005,
+     "thr": 53.0,
+     "tpr": 0.23438163754710514,
+     "fpr": 0.004617213791991617,
+     "mcc": 0.3901573559909588
+    },
+    "exp_mcc_ci": [
+     0.3406935809856895,
+     0.4418927521069676
+    ]
+   },
+   "C1": {
+    "name": "model, all features, Recod.ai only",
+    "auc": 0.7171356909482585,
+    "auc_publication": 0.6078070532150579,
+    "auc_by_variant": {
+     "clean": 0.9889733696663733,
+     "rotate": 0.799383739544064,
+     "scale": 0.8201345631536326,
+     "flip": 0.5002682167057848,
+     "blur": 0.6443728310405225,
+     "jpeg": 0.6530828054275414
+    },
+    "best": {
+     "target": 0.005,
+     "thr": 0.9884646123832571,
+     "tpr": 0.22539860548535962,
+     "fpr": 0.004444410857868327,
+     "mcc": 0.3824386664182967
+    },
+    "exp_mcc_ci": [
+     0.3312182271673822,
+     0.443758399177752
+    ]
+   },
+   "C2": {
+    "name": "model, stable features, Recod.ai only",
+    "auc": 0.7189766997575714,
+    "auc_publication": 0.6038432681001068,
+    "auc_by_variant": {
+     "clean": 0.9921420530961849,
+     "rotate": 0.8035141103664514,
+     "scale": 0.8292014491108485,
+     "flip": 0.5037872567081243,
+     "blur": 0.6395992719898244,
+     "jpeg": 0.6487005509548225
+    },
+    "best": {
+     "target": 0.005,
+     "thr": 0.9897651822423816,
+     "tpr": 0.2222742478286278,
+     "fpr": 0.004355238498277008,
+     "mcc": 0.38014825882097864
+    },
+    "exp_mcc_ci": [
+     0.32864579737088245,
+     0.4328262622700711
+    ]
+   },
+   "C3": {
+    "name": "model, all features, Recod.ai + synthetic BioFors",
+    "auc": 0.7430009276053898,
+    "auc_publication": 0.6511967330801062,
+    "auc_by_variant": {
+     "clean": 0.9893002147574872,
+     "rotate": 0.8495115546412676,
+     "scale": 0.8455920886913759,
+     "flip": 0.5161492617911184,
+     "blur": 0.6562010686144524,
+     "jpeg": 0.6736228308938916
+    },
+    "best": {
+     "target": 0.005,
+     "thr": 0.9473806835753246,
+     "tpr": 0.29117838502307397,
+     "fpr": 0.004394131753420793,
+     "mcc": 0.4538431177460039
+    },
+    "exp_mcc_ci": [
+     0.3890414663721052,
+     0.517651084282442
+    ]
+   },
+   "C4": {
+    "name": "model, stable features, Recod.ai + synthetic BioFors",
+    "auc": 0.7450185752891725,
+    "auc_publication": 0.6457897580716665,
+    "auc_by_variant": {
+     "clean": 0.9931777437905424,
+     "rotate": 0.8439008796581585,
+     "scale": 0.8523096380344741,
+     "flip": 0.5189465645983666,
+     "blur": 0.6574131337946857,
+     "jpeg": 0.6714682015070548
+    },
+    "best": {
+     "target": 0.005,
+     "thr": 0.961014462195593,
+     "tpr": 0.27419160469943377,
+     "fpr": 0.004394131753420793,
+     "mcc": 0.43644823577202735
+    },
+    "exp_mcc_ci": [
+     0.3742084409113382,
+     0.49662363565173234
+    ]
+   }
+  },
+  "diff_vs_C0_ci": {
+   "C1": [
+    -0.0783289471523651,
+    0.05864365201796739
+   ],
+   "C2": [
+    -0.0701359353985667,
+    0.05394952298082113
+   ],
+   "C3": [
+    -0.002089563196194973,
+    0.12175776456770677
+   ],
+   "C4": [
+    -0.014295049104359869,
+    0.1047657050552266
+   ]
+  },
+  "sources": {
+   "recod": "D:\\ENIGMA\\SEASON7-wandering\\forgery-detection\\version5.5\\results\\features.csv",
+   "synth": "D:\\ENIGMA\\SEASON7-wandering\\forgery-detection\\version6.6\\results\\synth_features.csv",
+   "biofors": "D:\\ENIGMA\\SEASON7-wandering\\forgery-detection\\version6\\results\\biofors_features.csv"
+  }
+ },
+ "frozen": {
+  "C3": {
+   "name": "model, all features, Recod.ai + synthetic BioFors",
+   "feature_idx": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+   ],
+   "features": [
+    "excl_frac",
+    "n_raw",
+    "raw_per_kp",
+    "raw_ratio_mean",
+    "raw_ratio_q25",
+    "n_inl",
+    "inl_per_raw",
+    "inl_ratio_mean",
+    "inl_ratio_q75",
+    "mutual_frac",
+    "uniq_pts_frac",
+    "both_roles_frac",
+    "n_dbscan",
+    "n_cl_tested",
+    "n_cl_passed",
+    "largest_inl",
+    "second_inl",
+    "top_share",
+    "disp_med",
+    "disp_min",
+    "disp_max",
+    "disp_cv",
+    "vec_spread",
+    "vec_spread_lg",
+    "lg_scale_dev",
+    "lg_rot",
+    "lg_src_bbox",
+    "lg_dst_bbox",
+    "lg_sd_dist",
+    "lg_sd_iou",
+    "lg_density",
+    "all_bbox"
+   ],
+   "fpr_target": 0.005,
+   "threshold": 0.9512175460417074,
+   "calib_fpr_realised": 0.004726618705035972,
+   "synthetic_expected_mcc": 0.4538431177460039,
+   "synthetic_expected_mcc_ci": [
+    0.3890414663721052,
+    0.517651084282442
+   ]
+  },
+  "C0": {
+   "name": "count (confirmed matches)",
+   "feature_idx": [
+    5
+   ],
+   "features": [
+    "n_inl"
+   ],
+   "fpr_target": 0.005,
+   "threshold": 59.0,
+   "calib_fpr_realised": 0.004639441388066018,
+   "synthetic_expected_mcc": 0.3901573559909588,
+   "synthetic_expected_mcc_ci": [
+    0.3406935809856895,
+    0.4418927521069676
+   ]
+  }
+ }
+}

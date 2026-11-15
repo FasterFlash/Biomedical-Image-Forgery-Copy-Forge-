@@ -1,0 +1,102 @@
+('authentic', '3159', 'on')	ImportError: Rule 'ocr' needs the text detector. Install it with:
+    pip install rapidocr-onnxruntime
+or remove 'ocr' from EXCLUDE_RULES in config.py
+('forged', '3159', 'on')	ImportError: Rule 'ocr' needs the text detector. Install it with:
+    pip install rapidocr-onnxruntime
+or remove 'ocr' from EXCLUDE_RULES in config.py
+('authentic', '3167', 'on')	ImportError: Rule 'ocr' needs the text detector. Install it with:
+    pip install rapidocr-onnxruntime
+or remove 'ocr' from EXCLUDE_RULES in config.py
+('forged', '3167', 'on')	ImportError: Rule 'ocr' needs the text detector. Install it with:
+    pip install rapidocr-onnxruntime
+or remove 'ocr' from EXCLUDE_RULES in config.py
+('authentic', '3197', 'on')	ImportError: Rule 'ocr' needs the text detector. Install it with:
+    pip install rapidocr-onnxruntime
+or remove 'ocr' from EXCLUDE_RULES in config.py
+('forged', '3197', 'on')	ImportError: Rule 'ocr' needs the text detector. Install it with:
+    pip install rapidocr-onnxruntime
+or remove 'ocr' from EXCLUDE_RULES in config.py
+('authentic', '3228', 'on')	ImportError: Rule 'ocr' needs the text detector. Install it with:
+    pip install rapidocr-onnxruntime
+or remove 'ocr' from EXCLUDE_RULES in config.py
+('forged', '3228', 'on')	ImportError: Rule 'ocr' needs the text detector. Install it with:
+    pip install rapidocr-onnxruntime
+or remove 'ocr' from EXCLUDE_RULES in config.py
+('forged', '3260', 'on')	ImportError: Rule 'ocr' needs the text detector. Install it with:
+    pip install rapidocr-onnxruntime
+or remove 'ocr' from EXCLUDE_RULES in config.py
+('authentic', '3318', 'on')	ImportError: Rule 'ocr' needs the text detector. Install it with:
+    pip install rapidocr-onnxruntime
+or remove 'ocr' from EXCLUDE_RULES in config.py
+('forged', '3318', 'on')	ImportError: Rule 'ocr' needs the text detector. Install it with:
+    pip install rapidocr-onnxruntime
+or remove 'ocr' from EXCLUDE_RULES in config.py
+('forged', '3339', 'on')	ImportError: Rule 'ocr' needs the text detector. Install it with:
+    pip install rapidocr-onnxruntime
+or remove 'ocr' from EXCLUDE_RULES in config.py
+('authentic', '3367', 'on')	ImportError: Rule 'ocr' needs the text detector. Install it with:
+    pip install rapidocr-onnxruntime
+or remove 'ocr' from EXCLUDE_RULES in config.py
+('forged', '3367', 'on')	ImportError: Rule 'ocr' needs the text detector. Install it with:
+    pip install rapidocr-onnxruntime
+or remove 'ocr' from EXCLUDE_RULES in config.py
+('authentic', '3371', 'on')	ImportError: Rule 'ocr' needs the text detector. Install it with:
+    pip install rapidocr-onnxruntime
+or remove 'ocr' from EXCLUDE_RULES in config.py
+('forged', '3371', 'on')	ImportError: Rule 'ocr' needs the text detector. Install it with:
+    pip install rapidocr-onnxruntime
+or remove 'ocr' from EXCLUDE_RULES in config.py
+('authentic', '3394', 'on')	ImportError: Rule 'ocr' needs the text detector. Install it with:
+    pip install rapidocr-onnxruntime
+or remove 'ocr' from EXCLUDE_RULES in config.py
+('forged', '3394', 'on')	ImportError: Rule 'ocr' needs the text detector. Install it with:
+    pip install rapidocr-onnxruntime
+or remove 'ocr' from EXCLUDE_RULES in config.py
+('authentic', '3402', 'on')	ImportError: Rule 'ocr' needs the text detector. Install it with:
+    pip install rapidocr-onnxruntime
+or remove 'ocr' from EXCLUDE_RULES in config.py
+('forged', '3402', 'on')	ImportError: Rule 'ocr' needs the text detector. Install it with:
+    pip install rapidocr-onnxruntime
+or remove 'ocr' from EXCLUDE_RULES in config.py
+('authentic', '3483', 'on')	ImportError: Rule 'ocr' needs the text detector. Install it with:
+    pip install rapidocr-onnxruntime
+or remove 'ocr' from EXCLUDE_RULES in config.py
+('forged', '3483', 'on')	ImportError: Rule 'ocr' needs the text detector. Install it with:
+    pip install rapidocr-onnxruntime
+or remove 'ocr' from EXCLUDE_RULES in config.py
+('authentic', '3574', 'on')	ImportError: Rule 'ocr' needs the text detector. Install it with:
+    pip install rapidocr-onnxruntime
+or remove 'ocr' from EXCLUDE_RULES in config.py
+('forged', '3574', 'on')	ImportError: Rule 'ocr' needs the text detector. Install it with:
+    pip install rapidocr-onnxruntime
+or remove 'ocr' from EXCLUDE_RULES in config.py
+('authentic', '3598', 'on')	ImportError: Rule 'ocr' needs the text detector. Install it with:
+    pip install rapidocr-onnxruntime
+or remove 'ocr' from EXCLUDE_RULES in config.py
+('forged', '3598', 'on')	ImportError: Rule 'ocr' needs the text detector. Install it with:
+    pip install rapidocr-onnxruntime
+or remove 'ocr' from EXCLUDE_RULES in config.py
+('authentic', '3606', 'on')	ImportError: Rule 'ocr' needs the text detector. Install it with:
+    pip install rapidocr-onnxruntime
+or remove 'ocr' from EXCLUDE_RULES in config.py
+('forged', '3606', 'on')	ImportError: Rule 'ocr' needs the text detector. Install it with:
+    pip install rapidocr-onnxruntime
+or remove 'ocr' from EXCLUDE_RULES in config.py
+('authentic', '3632', 'on')	ImportError: Rule 'ocr' needs the text detector. Install it with:
+    pip install rapidocr-onnxruntime
+or remove 'ocr' from EXCLUDE_RULES in config.py
+('forged', '3632', 'on')	ImportError: Rule 'ocr' needs the text detector. Install it with:
+    pip install rapidocr-onnxruntime
+or remove 'ocr' from EXCLUDE_RULES in config.py
+('authentic', '3662', 'on')	ImportError: Rule 'ocr' needs the text detector. Install it with:
+    pip install rapidocr-onnxruntime
+or remove 'ocr' from EXCLUDE_RULES in config.py
+('forged', '3662', 'on')	ImportError: Rule 'ocr' needs the text detector. Install it with:
+    pip install rapidocr-onnxruntime
+or remove 'ocr' from EXCLUDE_RULES in config.py
+('authentic', '3671', 'on')	ImportError: Rule 'ocr' needs the text detector. Install it with:
+    pip install rapidocr-onnxruntime
+or remove 'ocr' from EXCLUDE_RULES in config.py
+('forged', '3671', 'on')	ImportError: Rule 'ocr' needs the text detector. Install it with:
+    pip install rapidocr-onnxruntime
+or remove 'ocr' from EXCLUDE_RULES in config.py

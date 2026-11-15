@@ -1,0 +1,14 @@
+run_biofors   started 2026-11-13T14:54:04+05:30
+settings: {"images": "..\\biofors_images", "annotations": "..\\biofors_annotations", "categories": ["Microscopy", "Blot/Gel", "Macroscopy"], "calib": ["Blot/Gel:1000", "Microscopy:800", "Macroscopy:400"], "calib_seed": 0, "only": "both", "workers": 1, "limit": 10, "out": "results"}
+versions: {"python": "3.13.14", "platform": "Windows-11-10.0.26200-SP0", "cpus": 20, "numpy": "2.2.5", "cv2": "4.13.0", "sklearn": "1.8.0", "scipy": "1.17.1", "joblib": "1.5.3"}
+
+test set : 2363 images, 102 forged   types: Microscopy 987, Blot/Gel 1299, Macroscopy 77
+calib set: 2200 genuine images from training documents   Blot/Gel 1000 of 19105, Microscopy 800 of 10458, Macroscopy 400 of 555
+
+jobs to run: 20   (already done: 0)   workers: 1
+
+
+rows written this run: 20   errors: 0   mean detector time 0.32 s/image (per worker)
+Next:  python score_biofors.py
+
+run_biofors   finished 2026-11-13T14:54:13+05:30   runtime 0.1 min   status: ok

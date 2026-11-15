@@ -1,0 +1,21 @@
+train_final   started 2026-11-13T14:52:59+05:30
+settings: {"features": "..\\version5.5\\results\\features.csv", "mask": "off", "drop": ["image", "kp"], "folds": 5, "seed": 0, "operating_fpr": 0.05, "fpr_targets": [0.01, 0.02, 0.05, 0.1, 0.2], "out": "results"}
+versions: {"python": "3.13.14", "platform": "Windows-11-10.0.26200-SP0", "cpus": 20, "numpy": "2.2.5", "cv2": "4.13.0", "sklearn": "1.8.0", "scipy": "1.17.1", "joblib": "1.5.3"}
+
+Recod.ai rows: 5128  (forged 2751, authentic 2377)   image ids: 2751   features: 32   mask: OFF
+
+out-of-fold AUC   model 0.9249   old rule (match count) 0.8318
+
+cut-offs fixed on Recod.ai (out-of-fold), and what they give on Recod.ai:
+target FPR  model cut-off     FPR  detect   count cut-off     FPR  detect
+        1%         0.7902    1.0%   72.8%             182    1.0%   31.5%
+        2%         0.6884    2.0%   75.6%             145    2.0%   35.2%
+        5%         0.5417    5.0%   78.7%              48    4.9%   56.6%
+       10%         0.4019   10.0%   82.4%              33    9.7%   62.8%
+       20%         0.2883   20.0%   86.8%              19   19.3%   71.6%
+
+Operating point: 5% FPR -> model cut-off 0.5417, count cut-off 48 matches
+Saved: results\final_model.joblib, final_model.json, recod_oof_scores.csv
+Next:  python run_biofors.py --limit 10     (smoke test), then  python run_biofors.py --workers 4
+
+train_final   finished 2026-11-13T14:53:05+05:30   runtime 0.1 min   status: ok

@@ -1,0 +1,82 @@
+test_biofors   started 2026-11-13T19:03:15+05:30
+settings: {"frozen": "results\\final_v66.joblib", "v6": "..\\version6\\results", "boot": 1000, "seed": 0, "allow_repeat": false, "out": "results"}
+versions: {"python": "3.13.14", "platform": "Windows-11-10.0.26200-SP0", "cpus": 20, "numpy": "2.5.3", "cv2": "5.0.0", "sklearn": "1.9.1", "scipy": "1.18.1", "joblib": "1.6.0"}
+
+EXPERIMENT 2   chosen in develop.py: C3 (model, all features, Recod.ai + synthetic BioFors)   frozen 2026-11-13T18:59:25+05:30
+test images 2363, forged 102   (features from the version6 run, detector unchanged)
+
+========================================================================================================
+ALL IMAGE TYPES   (2363 images, 102 forged)
+========================================================================================================
+setting                                                        FPR  detect    image MCC [95% CI]    pixel MCC [95% CI]
+C3: model, all features, Recod.ai + synthetic BioFors @ 0.5% FPR target    0.5%   18.6%   0.329 [0.216,0.440]   0.237 [0.136,0.382]
+C0: count (confirmed matches) @ 0.5% FPR target               0.7%   33.3%   0.466 [0.359,0.578]   0.295 [0.180,0.445]
+version6: count, Recod.ai cut-off                             0.8%   39.2%   0.500                  0.316
+version6: model, zero-shot                                   23.7%   70.6%   0.218                  0.235
+version6: model, recalibrated                                 4.7%   37.3%   0.277                  0.271
+published: DF-PCT                                                            0.569                  0.364
+published: DF-ZM                                                             0.564                  0.353
+published: DF-FMT                                                            0.509                  0.316
+published: DWT                                                               0.341                  0.171
+published: BusterNet                                                         0.269                  0.107
+published: Zernike                                                           0.257                  0.114
+published: DCT                                                               0.196                  0.095
+
+========================================================================================================
+BLOT/GEL   (1299 images, 74 forged)
+========================================================================================================
+setting                                                        FPR  detect    image MCC [95% CI]    pixel MCC [95% CI]
+C3: model, all features, Recod.ai + synthetic BioFors @ 0.5% FPR target    0.7%   14.9%   0.274 [0.146,0.399]   0.285 [0.141,0.391]
+C0: count (confirmed matches) @ 0.5% FPR target               0.8%   25.7%   0.390 [0.278,0.508]   0.345 [0.230,0.465]
+version6: count, Recod.ai cut-off                             1.0%   31.1%   0.431                  0.370
+version6: model, zero-shot                                   24.9%   64.9%   0.208                  0.294
+version6: model, recalibrated                                 4.8%   32.4%   0.262                  0.335
+published: DF-PCT                                                            0.503                  0.466
+published: DF-ZM                                                             0.515                  0.449
+published: DF-FMT                                                            0.480                  0.400
+published: DWT                                                               0.384                  0.295
+published: BusterNet                                                         0.226                  0.076
+published: Zernike                                                           0.336                  0.187
+published: DCT                                                               0.250                  0.168
+
+========================================================================================================
+MACROSCOPY   (77 images, 11 forged)
+========================================================================================================
+setting                                                        FPR  detect    image MCC [95% CI]    pixel MCC [95% CI]
+C3: model, all features, Recod.ai + synthetic BioFors @ 0.5% FPR target    0.0%   18.2%   0.400 [0.000,0.905]   0.287 [0.000,0.606]
+C0: count (confirmed matches) @ 0.5% FPR target               3.0%   45.5%   0.516 [0.317,0.808]   0.381 [0.278,0.534]
+version6: count, Recod.ai cut-off                             3.0%   63.6%   0.660                  0.454
+version6: model, zero-shot                                   18.2%   81.8%   0.500                  0.398
+version6: model, recalibrated                                 1.5%   45.5%   0.574                  0.447
+published: DF-PCT                                                            0.712                  0.487
+published: DF-ZM                                                             0.573                  0.478
+published: DF-FMT                                                            0.495                  0.458
+published: DWT                                                               0.591                  0.268
+published: BusterNet                                                         0.021                  0.106
+published: Zernike                                                           0.493                  0.262
+published: DCT                                                               0.158                  0.143
+
+========================================================================================================
+MICROSCOPY   (987 images, 17 forged)
+========================================================================================================
+setting                                                        FPR  detect    image MCC [95% CI]    pixel MCC [95% CI]
+C3: model, all features, Recod.ai + synthetic BioFors @ 0.5% FPR target    0.3%   35.3%   0.479 [0.225,0.670]   0.176 [0.057,0.486]
+C0: count (confirmed matches) @ 0.5% FPR target               0.3%   58.8%   0.668 [0.315,0.880]   0.213 [0.078,0.565]
+version6: count, Recod.ai cut-off                             0.5%   58.8%   0.620                  0.208
+version6: model, zero-shot                                   22.5%   88.2%   0.201                  0.121
+version6: model, recalibrated                                 4.7%   52.9%   0.273                  0.153
+published: DF-PCT                                                            0.764                  0.202
+published: DF-ZM                                                             0.764                  0.197
+published: DF-FMT                                                            0.638                  0.167
+published: DWT                                                               0.299                  0.067
+published: BusterNet                                                         0.183                  0.178
+published: Zernike                                                           0.192                  0.032
+published: DCT                                                               0.187                  0.022
+
+threshold-free ranking on the test set (AUC, 95% CI by documents):
+  C3: model, all features, Recod.ai + synthetic BioFors    AUC 0.818 [0.763,0.868]
+  C0: count (confirmed matches)                            AUC 0.901 [0.855,0.935]
+
+Saved: results\test_biofors_metrics_20261113_190318.json, predictions_v66\ (authors' format), lock results\biofors_test_used.txt
+
+test_biofors   finished 2026-11-13T19:03:19+05:30   runtime 0.1 min   status: ok

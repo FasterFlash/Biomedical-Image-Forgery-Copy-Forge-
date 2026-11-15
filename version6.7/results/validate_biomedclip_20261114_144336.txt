@@ -1,0 +1,46 @@
+validate_biomedclip   started 2026-11-14T14:43:36+05:30
+settings: {"images": "..\\biofors_images", "annotations": "..\\biofors_annotations", "per_type": 500, "tune_share": 0.2, "seed": 0, "threads": null, "go_threshold": 0.85, "out": "results"}
+versions: {"python": "3.13.14", "platform": "Windows-11-10.0.26200-SP0", "cpus": 20, "numpy": "2.5.3", "cv2": "5.0.0", "sklearn": "1.9.1", "scipy": "1.18.1", "joblib": "1.6.0"}
+
+Blot/Gel    sampled 500 of 19105 available training images
+Microscopy  sampled 500 of 10458 available training images
+Macroscopy  sampled 500 of 555 available training images
+FACS        sampled 418 of 418 available training images
+tune images 360  /  check images 1558   (split by document)
+
+TUNE split (choosing the prompt wrapper):
+  template '{}'                                 balanced accuracy  84.5%   accuracy  85.0%
+  template 'this is {}'                         balanced accuracy  86.2%   accuracy  86.7%
+  template 'a figure panel showing {}'          balanced accuracy  83.6%   accuracy  83.9%
+  template 'a biomedical image: {}'             balanced accuracy  86.1%   accuracy  86.1%
+  all templates averaged                        balanced accuracy  86.1%   accuracy  86.4%
+chosen: template 'this is {}'
+
+==========================================================================================
+CHECK split (never used for choices): balanced accuracy 83.7%   plain accuracy 82.7%
+==========================================================================================
+  Blot/Gel     97.5% correct
+  Microscopy   97.5% correct
+  Macroscopy   39.9% correct
+  FACS        100.0% correct
+(Histology guesses count as Microscopy here: BioFors' Microscopy includes stained tissue)
+
+confusion (rows = true BioFors type, columns = BiomedCLIP's raw guess):
+               Blot/Gel Microscopy  Histology Macroscopy       FACS      Other
+Blot/Gel            383          6          1          1          1          1
+Microscopy            5        287        104          0          2          3
+Macroscopy           16         67        101        165         19         46
+FACS                  0          0          0          0        350          0
+
+how trustworthy is the confidence?  (share of CHECK images above a confidence, and their accuracy)
+  confidence >= 0.50:  94.7% of images,  85.8% of those correct
+  confidence >= 0.70:  86.3% of images,  90.7% of those correct
+  confidence >= 0.80:  81.2% of images,  93.6% of those correct
+  confidence >= 0.90:  76.1% of images,  95.8% of those correct
+  confidence >= 0.95:  71.8% of images,  97.2% of those correct
+
+VERDICT: WEAK - review will mostly be manual (balanced accuracy 83.7% vs threshold 85%). Either way every Recod.ai label is reviewed by a person.
+NOTE: the Histology-vs-Microscopy split cannot be validated on BioFors (no such labels there); it is checked only by the manual review, whose correction rate per class label_report.py prints.
+Next:  python prelabel_recod.py
+
+validate_biomedclip   finished 2026-11-14T14:46:59+05:30   runtime 3.4 min   status: ok

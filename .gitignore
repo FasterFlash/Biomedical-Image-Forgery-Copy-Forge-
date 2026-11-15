@@ -1,3 +1,40 @@
+# =====================================================================
+# Backup repo: code + results only. No datasets, no images, no masks.
+# Datasets are downloaded separately (see the README of each version).
+# =====================================================================
+
+# ---- Python / environment ------------------------------------------
+.venv/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.tmp
+
+# ---- Datasets and annotations (re-download, never commit) ----------
 dataset/
-*.venv
 biofors_images/
+biofors_annotations/
+v5_check/
+
+# ---- Papers (copyrighted PDFs) --------------------------------------
+research papers/
+
+# ---- Images, masks and arrays (dataset images and renderings of them)
+*.png
+*.jpg
+*.jpeg
+*.tif
+*.tiff
+*.bmp
+*.npy
+# keep the version7 result charts (drawn from numbers only)
+!version*/results/types_*.png
+
+# ---- Intermediate outputs: masks, synthetic images, match renderings
+**/results/raw_masks/
+**/results/predictions/
+**/results/predictions_v66/
+**/results/synth/
+**/results/matches_on/
+**/results/matches_off/

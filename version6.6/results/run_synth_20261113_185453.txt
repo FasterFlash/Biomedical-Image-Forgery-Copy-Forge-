@@ -1,0 +1,11 @@
+run_synth   started 2026-11-13T18:54:53+05:30
+settings: {"manifest": "results\\synth_manifest.csv", "synth_dir": "results\\synth", "workers": 1, "limit": 10, "out": "results"}
+versions: {"python": "3.13.14", "platform": "Windows-11-10.0.26200-SP0", "cpus": 20, "numpy": "2.5.3", "cv2": "5.0.0", "sklearn": "1.9.1", "scipy": "1.18.1", "joblib": "1.6.0"}
+
+pairs in manifest: 10   jobs to run: 20   (already done: 0)   workers: 1
+
+
+rows written this run: 20   errors: 0
+Next:  python develop.py
+
+run_synth   finished 2026-11-13T18:54:58+05:30   runtime 0.1 min   status: ok

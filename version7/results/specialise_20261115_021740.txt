@@ -1,0 +1,82 @@
+specialise   started 2026-11-15T02:17:40+05:30
+settings: {"v55": "..\\version5.5\\results", "v67": "..\\version6.7\\results", "seeds": 3, "repeats": 20, "boot": 1000, "out": "results"}
+versions: {"python": "3.13.14", "platform": "Windows-11-10.0.26200-SP0", "cpus": 20, "numpy": "2.5.3", "cv2": "5.0.0", "sklearn": "1.9.1", "scipy": "1.18.1", "joblib": "1.6.0"}
+
+Recod.ai images 5103 (forged 2736, authentic 2367), types ['Blot/Gel', 'Microscopy', 'Histology', 'Macroscopy'], features 32
+
+========================================================================================================================
+5% FPR TARGET   (cut-off chosen on half of the figures, measured on the other half; mean +- sd over 40)
+========================================================================================================================
+
+[Blot/Gel]  forged 521, authentic 411   ceiling (detector drew a region): 98.8%
+  rule                     AUC [95% CI]           FPR     detection      image MCC  img MCC @4.3%      pixel MCC
+  count rule      0.965 [0.952,0.976]     4.7+-2.1%    89.2+-1.7%   0.840+-0.015   0.636+-0.076   0.720+-0.013
+  global model    0.977 [0.967,0.986]     4.7+-1.9%    94.1+-1.0%   0.892+-0.016   0.660+-0.080   0.752+-0.009
+  global + type   0.979 [0.970,0.988]     4.8+-2.1%    95.2+-1.0%   0.903+-0.017   0.665+-0.082   0.759+-0.009
+  specialised     0.974 [0.962,0.985]     4.3+-1.5%    95.0+-1.1%   0.906+-0.015   0.682+-0.066   0.756+-0.010
+
+[Microscopy]  forged 1356, authentic 1138   ceiling (detector drew a region): 92.7%
+  rule                     AUC [95% CI]           FPR     detection      image MCC  img MCC @4.3%      pixel MCC
+  count rule      0.874 [0.861,0.886]     4.8+-1.4%    58.4+-2.0%   0.564+-0.013   0.429+-0.038   0.371+-0.013
+  global model    0.901 [0.890,0.913]     4.9+-1.4%    74.9+-1.5%   0.705+-0.018   0.534+-0.054   0.431+-0.011
+  global + type   0.912 [0.900,0.923]     4.9+-1.3%    75.5+-1.5%   0.710+-0.017   0.536+-0.045   0.433+-0.011
+  specialised     0.914 [0.903,0.925]     4.9+-1.4%    75.6+-1.4%   0.711+-0.020   0.537+-0.053   0.433+-0.011
+
+[Histology]  forged 414, authentic 373   ceiling (detector drew a region): 69.1%
+  rule                     AUC [95% CI]           FPR     detection      image MCC  img MCC @4.3%      pixel MCC
+  count rule      0.696 [0.669,0.724]     4.5+-2.6%    33.0+-3.5%   0.361+-0.030   0.267+-0.060   0.199+-0.018
+  global model    0.772 [0.744,0.801]     4.9+-2.1%    48.4+-3.3%   0.486+-0.027   0.365+-0.062   0.252+-0.021
+  global + type   0.809 [0.785,0.833]     4.3+-2.2%    50.1+-3.2%   0.508+-0.026   0.401+-0.067   0.258+-0.018
+  specialised     0.816 [0.791,0.843]     3.7+-1.9%    48.9+-3.5%   0.506+-0.027   0.414+-0.074   0.257+-0.019
+
+[Macroscopy]  forged 445, authentic 445   ceiling (detector drew a region): 100.0%
+  rule                     AUC [95% CI]           FPR     detection      image MCC  img MCC @4.3%      pixel MCC
+  count rule      0.999 [0.997,1.000]     4.8+-1.8%    98.9+-0.6%   0.942+-0.017   0.686+-0.075   0.818+-0.008
+  global model    1.000 [1.000,1.000]     4.9+-2.4%   100.0+-0.0%   0.953+-0.023   0.695+-0.096   0.826+-0.007
+  global + type   1.000 [1.000,1.000]     5.0+-2.0%   100.0+-0.0%   0.952+-0.019   0.685+-0.080   0.826+-0.007
+  specialised     1.000 [1.000,1.000]     4.8+-1.7%   100.0+-0.0%   0.953+-0.016   0.689+-0.070   0.826+-0.007
+
+========================================================================================================================
+0% FPR TARGET   (cut-off chosen on half of the figures, measured on the other half; mean +- sd over 40)
+========================================================================================================================
+
+[Blot/Gel]  forged 521, authentic 411   ceiling (detector drew a region): 98.8%
+  rule                     AUC [95% CI]           FPR     detection      image MCC  img MCC @4.3%      pixel MCC
+  count rule      0.965 [0.952,0.976]     0.5+-0.6%   46.4+-21.9%   0.521+-0.167   0.602+-0.118   0.386+-0.176
+  global model    0.977 [0.967,0.986]     0.5+-0.6%    84.9+-3.5%   0.840+-0.029   0.869+-0.039   0.693+-0.025
+  global + type   0.979 [0.970,0.988]     0.5+-0.6%    84.8+-3.7%   0.839+-0.030   0.869+-0.040   0.692+-0.025
+  specialised     0.974 [0.962,0.985]     0.5+-0.6%    82.1+-2.6%   0.813+-0.021   0.853+-0.047   0.676+-0.020
+
+[Microscopy]  forged 1356, authentic 1138   ceiling (detector drew a region): 92.7%
+  rule                     AUC [95% CI]           FPR     detection      image MCC  img MCC @4.3%      pixel MCC
+  count rule      0.874 [0.861,0.886]     0.2+-0.3%    24.4+-9.3%   0.351+-0.076   0.445+-0.060   0.168+-0.058
+  global model    0.901 [0.890,0.913]     0.2+-0.3%   39.3+-17.5%   0.472+-0.135   0.580+-0.116   0.245+-0.107
+  global + type   0.912 [0.900,0.923]     0.2+-0.3%    46.8+-9.7%   0.533+-0.072   0.649+-0.045   0.295+-0.060
+  specialised     0.914 [0.903,0.925]     0.2+-0.2%    50.7+-5.7%   0.563+-0.041   0.679+-0.017   0.321+-0.035
+
+[Histology]  forged 414, authentic 373   ceiling (detector drew a region): 69.1%
+  rule                     AUC [95% CI]           FPR     detection      image MCC  img MCC @4.3%      pixel MCC
+  count rule      0.696 [0.669,0.724]     0.4+-0.8%    18.4+-4.9%   0.301+-0.031   0.370+-0.046   0.118+-0.031
+  global model    0.772 [0.744,0.801]     0.6+-1.0%    31.5+-4.6%   0.413+-0.024   0.482+-0.058   0.188+-0.022
+  global + type   0.809 [0.785,0.833]     0.6+-0.8%    33.9+-4.7%   0.433+-0.027   0.506+-0.049   0.197+-0.022
+  specialised     0.816 [0.791,0.843]     0.5+-0.7%    36.1+-3.0%   0.452+-0.017   0.534+-0.056   0.206+-0.014
+
+[Macroscopy]  forged 445, authentic 445   ceiling (detector drew a region): 100.0%
+  rule                     AUC [95% CI]           FPR     detection      image MCC  img MCC @4.3%      pixel MCC
+  count rule      0.999 [0.997,1.000]     0.4+-0.5%    97.6+-0.9%   0.973+-0.008   0.951+-0.044   0.807+-0.010
+  global model    1.000 [1.000,1.000]     0.4+-0.5%   100.0+-0.0%   0.996+-0.005   0.963+-0.046   0.826+-0.007
+  global + type   1.000 [1.000,1.000]     0.4+-0.6%   100.0+-0.0%   0.996+-0.005   0.961+-0.050   0.826+-0.007
+  specialised     1.000 [1.000,1.000]     0.5+-0.6%    99.7+-0.3%   0.992+-0.005   0.953+-0.053   0.824+-0.007
+
+========================================================================================================================
+SUMMARY at 5% FPR target: best decision rule per type vs the version6 global model
+========================================================================================================================
+  Blot/Gel    best = specialised    detection  94.1% ->  95.0%   image MCC 0.892 -> 0.906   pixel MCC 0.752 -> 0.756   (ceiling 98.8%)
+  Microscopy  best = specialised    detection  74.9% ->  75.6%   image MCC 0.705 -> 0.711   pixel MCC 0.431 -> 0.433   (ceiling 92.7%)
+  Histology   best = global + type  detection  48.4% ->  50.1%   image MCC 0.486 -> 0.508   pixel MCC 0.252 -> 0.258   (ceiling 69.1%)
+  Macroscopy  best = specialised    detection 100.0% -> 100.0%   image MCC 0.953 -> 0.953   pixel MCC 0.826 -> 0.826   (ceiling 100.0%)
+
+In-dataset (Recod.ai) results only. These models were not, and will not be, tested on BioFors.
+Saved: results\specialise_metrics_20261115_021811.json, specialise_metrics_latest.json
+
+specialise   finished 2026-11-15T02:18:11+05:30   runtime 0.5 min   status: ok
