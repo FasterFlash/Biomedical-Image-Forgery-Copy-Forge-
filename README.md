@@ -1,4 +1,4 @@
-# **Copy-Move Forgery Detection in Biomedical Images: Status Report (V4 to V7)**
+# **Copy-Move Forgery Detection in Biomedical Images**
 Nov 15, 2026 · @Tarun
 ## **1. Project at a glance**
 - **Task:** detect copy-move (internal duplication) forgery in biomedical research figures, at image and pixel level.
